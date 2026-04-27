@@ -47,10 +47,9 @@ func main() {
 	fmt.Println(canEnter)
 
 	// Задание 3
-	var isLoggedIn bool = true
-	var isAdmin bool = false
-	hasAccess := isLoggedIn || isAdmin
-	hasAccess = isLoggedIn && !isAdmin
+	isLoggedIn := true
+	isAdmin := false
+	hasAccess := isLoggedIn && (isAdmin || !isAdmin)
 	fmt.Println(hasAccess)
 	
 }
